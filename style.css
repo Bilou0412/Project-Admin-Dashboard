@@ -147,6 +147,8 @@ ul{
     overflow:auto;
 }
 .project .Allcard{
+    grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     position: relative;
     margin: 30px;
     margin-top: 70px;
@@ -159,7 +161,7 @@ ul{
     box-sizing: border-box;
     display: flex;
     position: relative;
-    width: min(300px,100%);
+    width: max(270px,45%);
     height: 200px;
     padding: 20px;
     background-color: white;
@@ -199,7 +201,8 @@ ul{
     margin-top: 70px;
     position: relative;
     display: grid;
-    grid-template-columns: 200px 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
 }
 .project .announce h2{
     position: absolute;
@@ -215,7 +218,9 @@ ul{
     background-color: white;
     padding: 5px;
     display: grid;
-
+    grid-column: span 3;
+    grid-row: span 4;
+    width: max(200px,45%)
 }
 .project .announce .allpart .part p{
     margin: 0;
@@ -230,7 +235,7 @@ ul{
     margin-top: 30px;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,70px);
     grid-template-rows: repeat(5,1fr);
 }
 .project .announce .allpart2{
@@ -246,6 +251,7 @@ ul{
     grid-template-rows: repeat(4,1fr);
     justify-content: center;
     align-items: center;
+    width: max(200px,45%)
 }
 .project .announce .allpart2 .friends{
     grid-column: 2/3;
