@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     background-color: #047857;
     grid-column: 1;
-    grid-row: 1/4;
+    grid-row:1/ 4;
 }
 h1{
     display: flex;
@@ -144,6 +144,7 @@ ul{
     background-color:#ecfdf5;
     grid-row: 2/4;
     gap: 25px;
+    overflow:auto;
 }
 .project .Allcard{
     position: relative;
