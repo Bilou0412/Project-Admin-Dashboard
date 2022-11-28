@@ -4,6 +4,9 @@ html {line-height: 1.15; /* 1 */-webkit-text-size-adjust: 100%; /* 2 */}body {  
 html{
     height: 100%;
 }
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 body{
     height: 100%;
     display: grid;
@@ -140,6 +143,7 @@ ul{
     grid-template-rows: 1fr 1fr;
     background-color:#ecfdf5;
     grid-row: 2/4;
+    gap: 25px;
 }
 .project .Allcard{
     position: relative;
@@ -188,6 +192,86 @@ ul{
     position: absolute;
     top: -60px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+}
+.project .announce{
+    margin: 0px;
+    margin-top: 70px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 30px;
+}
+.project .announce h2{
+    position: absolute;
+    top:-60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+.project .announce .allpart{
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 1px 18px 0px #232323; 
+    box-shadow: 5px 1px 18px 0px #232323;
+    background-color: white;
+    padding: 5px;
+    display: grid;
+
+}
+.project .announce .allpart .part p{
+    margin: 0;
+    padding: 5px;
+}
+.project .announce .allpart .part h3{
+    margin: 0;
+    padding: 0px;
+}
+.project .announce:nth-child(3){
+    margin: 0px;
+    margin-top: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.project .announce .allpart2{
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 1px 18px 0px #232323; 
+    box-shadow: 5px 1px 18px 0px #232323;
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    grid-column: span 3;
+    grid-row: span 4;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.project .announce .allpart2 .friends{
+    grid-column: 2/3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.project .announce .allpart2 .friends h3{
+
+    margin: 0;
+    padding: 0px;
+}
+.project .announce .allpart2 .friends p{
+    margin: 0;
+    padding: 0px;
+}
+.project .announce .allpart2 .friends h3{
+    margin: 0;
+    padding: 0px;
+}
+.project .announce .allpart2 .pict{
+    background-color: #232323;
+    border-radius: 100%;
+    height: 50px;
+    width:  50px;
+    margin: 0;
+    padding: 0px;
+    align-self: center;
+    justify-self: center;
+}
